@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MultiBrowserSuite">
+   <listeners>
+      <listener class-name="com.inetBanking.utilities.Reporting"></listener>
+
+    </listeners>
+
+   <test name="MultiBrowserTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+           <class name="com.inetBanking.testCases.TC_LoginTest_001"/>
+            <!--<class name="com.inetBanking.testCases.TC_LoginDDT_002"/>-->
+        </classes>
+    </test> 
+ 
+   <!-- <test name="MultiBrowserTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.inetBanking.testCases.TC_LoginTest_001"/>
+        </classes>
+    </test> -->
+</suite>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <!-- Report Name -->
+    <configuration>
+        <reportName>ExtentReports Test Automation Report</reportName>
+    </configuration>
+
+    <!-- Themes: standard, dark -->
+    <configuration>
+        <theme>standard</theme>
+    </configuration>
+
+    <!-- Document Title -->
+    <configuration>
+        <documentTitle>Automation Test Results</documentTitle>
+    </configuration>
+
+    <!-- Encoding (Standard, Base64) -->
+    <configuration>
+        <encoding>UTF-8</encoding>
+    </configuration>
+
+    <!-- Protocol (HTTP, HTTPS) -->
+    <configuration>
+        <protocol>HTTPS</protocol>
+    </configuration>
+
+    <!-- System Info -->
+    <configuration>
+        <systemInfo>
+            <!-- Example of adding key-value pairs -->
+            <param>
+                <key>Environment</key>
+                <value>QA</value>
+            </param>
+            <param>
+                <key>Browser</key>
+                <value>Chrome</value>
+            </param>
+        </systemInfo>
+    </configuration>
+
+    <!-- Chart Visibility On Open -->
+    <configuration>
+        <dashboardCaptureOnTimeoutOnly>false</dashboardCaptureOnTimeoutOnly>
+    </configuration>
+
+    <!-- Timeout Settings -->
+    <configuration>
+        <timeout>
+            <duration>30</duration>
+            <unit>minutes</unit>
+        </timeout>
+    </configuration>
+
+    <!-- View Settings -->
+    <configuration>
+        <view>
+            <generalView>on</generalView>
+            <dataAccessLevel>admin</dataAccessLevel>
+        </view>
+    </configuration>
+
+    <!-- Add additional configurations as needed -->
+
+    <!-- HTML Reporter Configuration -->
+    <htmlReporter>
+        <protocol>HTTPS</protocol>
+        <autoCreateRelativePathMedia>true</autoCreateRelativePathMedia>
+        <encoding>UTF-8</encoding>
+        <timelineEnabled>true</timelineEnabled>
+        <testViewChart>on</testViewChart>
+    </htmlReporter>
+
+    <!-- PDF Reporter Configuration -->
+    <pdfReporter>
+        <templatePath>resources/extent-pdf-template.html</templatePath>
+    </pdfReporter>
+
+    <!-- MongoDB Reporter Configuration -->
+    <mongodbReporter>
+        <uri>mongodb://localhost:27017</uri>
+        <databaseName>extent-reports</databaseName>
+        <collectionName>test</collectionName>
+    </mongodbReporter>
+
+    <!-- Add additional reporters as needed -->
+
+</extentreports>
